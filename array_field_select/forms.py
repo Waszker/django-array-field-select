@@ -9,7 +9,7 @@ __all__ = ['SelectArrayField']
 class SelectArrayField(Field):
     def __init__(self, base_field, max_length, **kwargs):
         self.base_field = base_field
-        self.base_field.choices = self.base_field.choices[1:]
+        self.base_field.choices = list(self.base_field.choices)[1:]
         self.max_length = max_length
         self.widget = self.base_field.widget
         super(SelectArrayField, self).__init__(**kwargs)
