@@ -9,7 +9,7 @@ long_description = (here / "README.md").read_text(encoding="utf-8")
 
 setup(
     name='django-array-field-select-multiple',
-    version='0.3.1',
+    version='0.3.2',
     description=(
         'A replacement for Django\'s ArrayField with a multiple '
         'select form field.'
